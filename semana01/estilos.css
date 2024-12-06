@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); /*La familia se trae*/
 
 /* 
  font-family: "Fraunces", serif;
@@ -10,14 +10,14 @@ body{
 
     background-color: hsl(30, 38%, 92%);
 
-    font-size: 14px; 
-    font-family: "Montserrat", serif;
+    font-size: 14px; /*Todo el texo igual al tamaño 14*/
+    font-family: "Montserrat", serif; /*Todo el texto igual al tipo de familia*/
 
-    display: flex;  
+    display: flex;  /*Se centra las caja en toda la hoja*/
     justify-content: center;
     align-items: center;
 
-    height: 100vh;
+    height: 100vh; /*Hace que se use todo el margen de la pagina*/
 }
 
 main{
@@ -27,13 +27,19 @@ main{
 
     display: flex; /*FLEXBOX para uno a lado del otro*/
 
-    
+    min-height: 400px; /*El alto de la caja*/
+ 
+   
 }
 
 .photo {
     background-color: blue;
 
     width: 350px;
+
+    background-image: url(./images/image-product-desktop.jpg);
+    background-size: cover; /*Para que quepa en el recuadro*/
+    background-repeat: no-repeat; /*Para que no se repita la imagen*/
 }
 
 .content {
