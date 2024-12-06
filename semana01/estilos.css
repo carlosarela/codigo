@@ -21,14 +21,18 @@ body{
 }
 
 main{
-    border: 1px solid red; /* */
+    border: 0px solid red; /* */
 
     width: 650px;
 
     display: flex; /*FLEXBOX para uno a lado del otro*/
 
     min-height: 400px; /*El alto de la caja*/
- 
+
+    /*
+    border-radius: 14px; /*Crear borde en una caja*/
+    /* overflow: hidden; /*Para que no sobresalga el borde*/
+    
    
 }
 
@@ -43,7 +47,60 @@ main{
 }
 
 .content {
-    background-color: orange;
+    background-color: hsl(0, 0%, 100%);
 
     width: 300px;
+
+    padding: 28px; /*Crear Borde dentro de la caja*/
+
+}
+
+.content h3{
+    /*border: 1px solid blue;*/
+
+    margin: 0; /*Elimina margen fantasma de cada parrafo*/
+    text-transform: uppercase; /*Texto mayuscula*/
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    letter-spacing: 4px; /*Espaciado*/
+}
+
+.content h1{
+    margin: 0;
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 42px; /*14px * 3 = 42px*/
+    color: hsl(212, 21%, 14%);
+}
+
+.content p{
+    margin: 0; /* */
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.5; /*Interlineado*/
+}
+
+.content span{
+    font-family: "Fraunces", serif;
+    font-size: 42px;
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+}
+
+.content s{
+    color: hsl(228, 12%, 48%);
+}
+
+.content button{
+    border: 0;
+    font-family: inherit; /*Hereda el elemento padre*/
+    font-size: 700;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+
+    padding: 14px; 
+    border-radius: 7px; /*Redondear borde*/
+    cursor: pointer; /*Cambiar el cursor al pasar el mause*/
+    
 }
