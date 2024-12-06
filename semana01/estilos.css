@@ -1,7 +1,11 @@
-p{
-    color: red;
+body{
+    background-color: hsl(30, 38%, 92%);
+
+    font-size: 14px; 
 }
 
-h1{
-    color: orange;
+main{
+    border: 1px solid red;
+
+    width: 650px;
 }
