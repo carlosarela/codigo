@@ -2,6 +2,8 @@
 
 ![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg)
 
+https://iridescent-manatee-bd78ce.netlify.app/ Proyecto
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
