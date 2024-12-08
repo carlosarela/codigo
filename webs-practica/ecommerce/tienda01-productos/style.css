@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #EFF3F4;
+    padding: 130PX 0 0 0;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;     /* Separacion entre objetos */
+}
+
+.logo  {
+    font-size: 25px;
+    color: #9bce21;
+    text-transform: uppercase;   /* Minuscula a Mayuscula */
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+    }
+
+.menu .navbar ul li a { /*  */
+    font-size: 18px;
+    padding: 20px;
+    color: #111419;
+    display: block;              /* elemento ocupará todo el ancho disponible y formará una nueva línea */
+}
+
+.menu .navbar ul li a:hover {   
+    color: #9bce21;         /* hover= cambia de color cuando pasa el cursor */
+    
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;        /* Cambiar el curso sobre la seccion */
+    display: none;          /* Desaparecer iconos */
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {       /*  */
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);    /* Crea un degradado en carrito */
+    top: 100%;
+    z-index: 1;                     /* ordena la lista en carrito */
+    background-color: #4e4b5076;
+    padding: 20px;
+    min-width: 400px;
+}
+
+table   {
+    width: 100%;
+}
+
+th, td {                            /* Se derrolla en java */
+    color: white;
+}
+
+.borrar {                           /* Se desarrolla en java */
+    background-color: #9bce21;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: #ffff;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-txt {
+    flex-basis: 50%;                /* define el tamaño inicial */
+    margin-right: 25px;
+}
+
+span {
+    color: #9bce21;
+    font-size: 17px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 25px;            /* Espaciado hacia abajo */
+}
+
+.header-txt h1 {
+    font-size: 70px;
+    text-transform: capitalize;     /* Mayuscula la 1ra letra de un txt */
+    line-height: 1;                 /* internilineado quita o agrega */
+    color: #111419;
+    margin-bottom: 35px;
+}
+
+.header-txt p {
+    font-size: 17px;
+    color: #515557;
+    margin-bottom: 35px;
+}
+
+.butons {
+    display: flex;                 /*  */
+}
+
+.btn-1 {
+    display: inline-block;         /* Block: Colocar medidas al elemento y Inlines: Colocar un elemento seguido de otro */
+    padding: 13px 25px;
+    background-color: #9bce21;
+    margin-right: 20px;             /* Espaciado hacia el costado */
+    color: #ffff;
+    text-transform: capitalize;
+    margin-bottom: 100px;
+    
+}
