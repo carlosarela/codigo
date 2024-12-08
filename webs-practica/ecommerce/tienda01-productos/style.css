@@ -157,5 +157,90 @@ span {
     color: #ffff;
     text-transform: capitalize;
     margin-bottom: 100px;
-    
+    border-radius: 5px;
 }
+
+.header-img {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.header-img img {
+    height: 550px;
+}
+
+/*-------------------- FIN HEADER ----------------------*/
+/*------------------- INICIO SECCITION -----------------*/
+
+.oferts {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ofert-1 {
+    flex-basis: calc(33.3% - 20px);     /* Solicita que cada caja tenga 33.3% del 100% y deje un espacio entre cajas de 20px */
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.b1 {
+    background-color: #91ddd8;
+}
+
+.b2 {
+    background-color: #fa9824;
+}
+
+.b3 {
+    background-color: #9bce21;
+}
+
+.ofert-txt {
+    flex-basis: 50%;
+}
+
+.ofert-txt h3 {
+    color: #ffff;
+    font-size: 20px;
+}
+
+.ofert-txt a {
+    color: #ffff;
+}
+
+.ofert-img {
+    flex-basis: 50%;
+}
+
+/*------------------- FIN SECTION ----------------------*/
+/*------------------- INICIO MAIN ----------------------*/
+
+.products {
+    padding: 0 0 50px 0;
+    text-align: center;
+}
+
+h2{
+    font-size: 40px;
+    color: #111419;
+}
+
+.box-container {
+    margin-top: 55px;
+    display: grid;     /*Crea una cuadrícula de una sola columna, los elementos se muestren uno debajo del otro.*/
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*Crea Columnas con parametros --IMPORTANTE--*/
+    gap: 20px;
+}
+
+.box {
+    border-top: 2px solid #9bce21;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.b2);
+    display: none;
+}
+
