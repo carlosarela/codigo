@@ -240,7 +240,116 @@ h2{
     border-top: 2px solid #9bce21;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.b2);
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.2); /*Crea Sombra*/
     display: none;
 }
 
+/* CREA SECCION DE 8 PRODUCTOS Y ESCONDE LOS DEMAS */
+.box:nth-child(1),
+.box:nth-child(2),
+.box:nth-child(3),
+.box:nth-child(4),
+.box:nth-child(5),
+.box:nth-child(6),
+.box:nth-child(7),
+.box:nth-child(8) {
+    display: inline-block
+}
+
+.box img {
+    height: 200px;
+}
+
+.product-txt h3 {
+    font-size: 20px;
+    color: #111419;
+    margin-bottom: 10px;
+}
+
+.product-txt p {
+    margin-bottom: 25px;
+    color: #515557;
+}
+
+.precio {
+    font-size: 17px;
+    font-weight: 700;
+    color: #ff9100 !important;
+}
+
+/*Asi se puede crear estilo para varios botones*/
+.btn-2, .btn-3 {      
+    background-color: #9bce21;
+    margin-top: 50px;
+    display: inline-block;
+    padding: 11px 35px;
+    border-radius: 25px;
+    color: #ffff;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.2);
+}
+
+.btn-2:hover, .btn-3:hover, .btn-1:hover {
+    background-color: #13462e;
+}
+
+.btn-3 {
+    margin: 0;
+    padding: 8px 25px;
+    border-radius: 5px;
+}
+
+/*------------------- FIN MAIN --------------------------*/
+/*--------------- INICIO TESTIMONIO ----------------------*/
+
+.testimonio {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.testimonio-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.testimonio-1 {
+    flex-basis: calc(50% - 20px);
+    padding: 50px;
+    text-align: left;
+    background-color: #f6fafb;
+    border-top: 5px solid #9bce21;
+}
+
+.testimonio-1 img {
+    width: 100px;
+}
+
+.testimonio-1 h4 {
+    font-size: 17px;
+    color: #111419;
+}
+
+.testimonio-1 p {
+    color: #515557;
+    margin-bottom: 25px;
+}
+
+/*------------------- FIN TESTIMONIO ------------------------*/
+/*--------------- INICIO PIE DE PAGINA ----------------------*/
+
+.footer {
+    background-color: #13462e;
+    padding: 100px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3 {
+    color: #ffff;
+    
+}
