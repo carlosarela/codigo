@@ -351,5 +351,131 @@ h2{
 
 .link h3 {
     color: #ffff;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.link a {
+    color: #ffff;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.link a:hover {
+    color: #9bce21;
+}
+
+/*----------------- FIN PIE DE PAGINA ------------------------*/
+/*--------------- INICIO RESPONSIVE ------------------------*/
+
+@media (max-width:991px) {
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ff9100;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .logo {
+        display: none;
+    }
     
+    .menu .navbar ul li a:hover {
+        color: #ffff;
+    }
+
+    .submenu:hover #carrito {
+        width: 100%;
+    }
+
+    /*--------------- FIN RESPONSIVE MENU ----------------*/
+
+    .header {
+        padding: 50px 0 0 0;
+    }
+
+    .header-content {
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-txt {
+        margin-right: 0;
+    }
+
+    .butons {
+        justify-content: center;
+    }
+
+    .btn-1 {
+        margin-bottom: 0;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    /*--------------- FIN RESPONSIVE HEADER ----------------*/
+
+    .oferts {
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .ofert-1 {
+        margin-bottom: 15px;
+    }
+
+    /*--------------- FIN RESPONSIVE OFERTAS ----------------*/
+
+    .products {
+        padding: 0 30px 30px 30px;
+    }
+
+    /*--------------- FIN RESPONSIVE PRODUCTOS ----------------*/
+
+    .testimonio {
+        padding: 30PX;
+    }
+
+    .testimonio-content {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .testimonio-1 {
+        padding: 25px;
+        margin-bottom: 25px;
+    }
+
+    /*--------------- FIN RESPONSIVE TESTIMONIOS ----------------*/
+
+    .footer {
+        padding: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
 }
