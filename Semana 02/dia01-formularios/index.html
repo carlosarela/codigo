@@ -81,7 +81,116 @@
 
             <input type="hidden" value="datos-ocultos" name="dato-oculto">
 
-            
+            <input type="submit" value="Guardar"/>
+            <input type="submit" value="limpiar">
+        </form>
+
+        <form>
+            <h2>Input tipo fecha</h2>
+
+            <label>  
+                Input tipo date-time-local (fecha y hora)
+                <input type="datetime-local" name="fecha" />
+            </label>
+
+            <label>  
+                Input tipo date (dia)
+                <input type="date" name="dia" />
+            </label>
+
+            <label>  
+                Input tipo week (semana)
+                <input type="week" name="semana" />
+            </label>
+
+            <label>  
+                Input tipo month (mes)
+                <input type="month" name="mes" />
+            </label>
+
+            <input type="submit" value="Guardar"/>
+        </form>
+
+        <form>
+            <h2>Textarea</h2>
+
+            <label>  
+                Input tipo texto grande
+                <textarea placeholder="Escribe tu experiencia..." rows="5" cols="4" name="biografia"></textarea>
+            </label>
+
+            <label>  
+                Input tipo texto grande
+                <textarea placeholder="Escribe tu experiencia..." rows="5" cols="4" name="biografia2" disabled></textarea>
+            </label>
+
+            <input type="submit" value="Guardar"/>
+        </form>
+
+        <form>
+            <h2>Casillas de seleccion</h2>
+
+            <label>  
+                Comida favorita
+                <select>
+                    <option value="">Selecciona tu comida favorita</option>
+                    <option value="fr">Francesa</option>
+                    <option value="it">Itliana</option>
+                    <option value="jp">Japonesa</option>
+                    <option value="pe">Peruana</option>
+                    <option value="th">Tailandesa</option>
+                </select>
+            </label>
+
+            <input type="submit" value="Guardar"/>
+        </form>
+
+        <form>
+            <h2>Checkbox</h2>
+
+            <h3>Lenguaje de preferencias</h3>
+
+            <label>                  
+                <input type="checkbox" name="english" value="en">
+                Ingles
+            </label>
+
+            <input type="submit" value="Guardar"/>
+        </form>
+
+        <form>
+            <h2>Radio buttons</h2>
+
+            <h3>Lenguaje de preferencias</h3>
+
+            <label>                  
+                <input type="radio" name="Lenguaje" value="en">
+                Ingles
+            </label>
+            <label>                  
+                <input type="radio" name="Lenguaje" value="es">
+                Español
+            </label>
+            <label>                  
+                <input type="radio" name="Lenguaje" value="es">
+                Frances
+            </label>
+
+            <h3>Seleecione su comida favorita</h3>
+
+            <label>                  
+                <input type="radio" name="comida" value="en">
+                Ceviche
+            </label>
+            <label>                  
+                <input type="radio" name="comida" value="es">
+                Cuasa
+            </label>
+            <label>                  
+                <input type="radio" name="comida" value="es">
+                Arroz con pato
+            </label>
+
             <input type="submit" value="Guardar"/>
         </form>
     </main>
