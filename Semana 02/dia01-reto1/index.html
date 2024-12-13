@@ -6,35 +6,52 @@
   <title>Formulario</title>
 </head>
 <body>
-  
-  Contact Us
+  <main class="contact-form">
+    <h1>Contact Us</h1>
 
-  First Name
-  This field is required
+    <form>
+      <div class="row">
+        <label>
+          First Name <span class="required">*</span>
+          <input type="text" name="first_name"/>
+        </label>
+    
+        <label>
+          Last Name <span class="required">*</span>
+          <input type="text" name="last_name"/>
+        </label>
+      </div>
 
-  Last Name
-  This field is required
+      <label>
+        Email Address <span class="required">*</span>
+        <input type="email" name="email"/>
+      </label>
 
-  Email Address
-  Please enter a valid email address
-  This field is required
+      <label>
+        Query Type <span class="required">*</span>
+        <div class="row">
+          <div class="query-type">
+            <input type="radio" name="query_type" />
+            General Enquiry
+          </div>
+          <div class="query-type">
+            <input type="radio" name="query_type" />
+            Support Request
+          </div>
+      </label>
 
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
+      <label>
+        Message <span class="required">*</span>
+        <textarea rows="5"></textarea>
+      </label>
 
-  Message
-  This field is required
+      <label>
+        <input type="checkbox" />
+        I consent to being contacted by the team
+      </label>
 
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
-
-  Submit
-
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
-  
-
+      <input type="submit" value="Submit" />
+    </form>
+  </main>
 </body>
 </html>
