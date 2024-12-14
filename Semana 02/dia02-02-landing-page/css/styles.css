@@ -1,3 +1,79 @@
-body {
-    background-color: red;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/*
+font-family: "Open Sans", sans-serif;
+font-family: "Raleway", serif;
+*/
+
+/*GENERALES*/
+
+* { /*Selector universal*/
+    box-sizing: border-box;
+    margin: 0;
 }
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+
+    background-color: hsl(217, 28%, 15%);
+    color: hsl(0, 0%, 100%);
+}
+
+a {
+    color: inherit; /*SIRVE PARA HEREDAR --- IMPORTANTE --*/
+    text-decoration: none; /*QUITA ESTILOS (SUBRAYADO) --- IMPORTANTE --*/
+}
+
+img {
+    /*RESPONSIVE PARA IMG --- IMPORTANTE --*/
+}
+
+ /* UTILITARIOS */
+
+.hidden {
+    display: none;
+}
+
+.wrapper {
+    width: 1000px;
+}
+
+ /* */
+
+ /*INICIO HEADER*/
+.header {
+    border: 1px solid red;
+
+    display: flex;
+    justify-content: space-between;  /*Espacio entre elementos se distribuyan equitativamente*/
+    align-items: center;
+
+    margin: 0 auto; /*0: top botton / Auto: a los costados*/
+    margin-top: 48px;
+}
+
+.header__nav {
+    border: 1px solid red;
+
+    display: flex;
+    gap: 48px;
+}
+
+  /*INICIO HERO SECCION*/
+
+  .hero {
+    border: 1px solid yellow;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
