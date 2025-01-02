@@ -77,3 +77,18 @@ img {
     padding-top: 48px;
     padding-bottom: 48px;
   }
+
+.hero__text {
+
+}
+
+  .hero button {
+    font-weight: 700;
+
+    border: none;
+    border-radius: 7rem;
+    padding: 1rem 1.5rem;
+    max-width: 220px;
+    color: hsl(0, 0%, 100%);
+    background-color: aqua;
+  }
